@@ -1,0 +1,40 @@
+2026-05-13 19:50:49.524 [INFO ] org.avaj.radyuk.entity.Truck - Truck 2 ready to work. Priority: false. OperationTime: 6000
+2026-05-13 19:50:49.524 [INFO ] org.avaj.radyuk.entity.Truck - Truck 3 ready to work. Priority: true. OperationTime: 3000
+2026-05-13 19:50:49.524 [INFO ] org.avaj.radyuk.entity.Truck - Truck 1 ready to work. Priority: false. OperationTime: 3000
+2026-05-13 19:50:49.534 [INFO ] org.avaj.radyuk.state.WaitingState - Truck 2 is waiting in queue
+2026-05-13 19:50:49.534 [INFO ] org.avaj.radyuk.state.WaitingState - Truck 3 is waiting in queue
+2026-05-13 19:50:49.534 [INFO ] org.avaj.radyuk.state.WaitingState - Truck 1 is waiting in queue
+2026-05-13 19:50:49.534 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 2 trying to enter the Base. Priority: false
+2026-05-13 19:50:49.535 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 2 is entering the base and occupying the Spot. OccupiedSpots: 1/5
+2026-05-13 19:50:49.536 [INFO ] org.avaj.radyuk.state.UnloadingState - Truck 2 started UNLOADING. Time: 6000
+2026-05-13 19:50:49.537 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 3 trying to enter the Base. Priority: true
+2026-05-13 19:50:49.538 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 3 is entering the base and occupying the Spot. OccupiedSpots: 2/5
+2026-05-13 19:50:49.539 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 1 trying to enter the Base. Priority: false
+2026-05-13 19:50:49.539 [INFO ] org.avaj.radyuk.state.LoadingState - Truck 3 started LOADING. Time: 3000
+2026-05-13 19:50:49.539 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 1 is entering the base and occupying the Spot. OccupiedSpots: 3/5
+2026-05-13 19:50:49.540 [INFO ] org.avaj.radyuk.state.LoadingState - Truck 1 started LOADING. Time: 3000
+2026-05-13 19:50:52.549 [INFO ] org.avaj.radyuk.state.LoadingState - Truck 1 finished LOADING
+2026-05-13 19:50:52.549 [INFO ] org.avaj.radyuk.state.LoadingState - Truck 3 finished LOADING
+2026-05-13 19:50:52.549 [INFO ] org.avaj.radyuk.state.CompletedState - Truck 1 completed & exiting the base
+2026-05-13 19:50:52.549 [INFO ] org.avaj.radyuk.state.CompletedState - Truck 3 completed & exiting the base
+2026-05-13 19:50:52.550 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 1 is leaving base. OccupiedSpots: 2/5
+2026-05-13 19:50:52.551 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 3 is leaving base. OccupiedSpots: 1/5
+2026-05-13 19:50:52.553 [INFO ] org.avaj.radyuk.entity.Truck - Truck 4 ready to work. Priority: false. OperationTime: 3000
+2026-05-13 19:50:52.553 [INFO ] org.avaj.radyuk.entity.Truck - Truck 5 ready to work. Priority: true. OperationTime: 6000
+2026-05-13 19:50:52.553 [INFO ] org.avaj.radyuk.state.WaitingState - Truck 5 is waiting in queue
+2026-05-13 19:50:52.555 [INFO ] org.avaj.radyuk.state.WaitingState - Truck 4 is waiting in queue
+2026-05-13 19:50:52.555 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 5 trying to enter the Base. Priority: true
+2026-05-13 19:50:52.556 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 5 is entering the base and occupying the Spot. OccupiedSpots: 2/5
+2026-05-13 19:50:52.556 [INFO ] org.avaj.radyuk.state.UnloadingState - Truck 5 started UNLOADING. Time: 6000
+2026-05-13 19:50:52.556 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 4 trying to enter the Base. Priority: false
+2026-05-13 19:50:52.556 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 4 is entering the base and occupying the Spot. OccupiedSpots: 3/5
+2026-05-13 19:50:52.556 [INFO ] org.avaj.radyuk.state.LoadingState - Truck 4 started LOADING. Time: 3000
+2026-05-13 19:50:55.542 [INFO ] org.avaj.radyuk.state.UnloadingState - Truck 2 finished UNLOADING
+2026-05-13 19:50:55.543 [INFO ] org.avaj.radyuk.state.CompletedState - Truck 2 completed & exiting the base
+2026-05-13 19:50:55.543 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 2 is leaving base. OccupiedSpots: 2/5
+2026-05-13 19:50:55.569 [INFO ] org.avaj.radyuk.state.LoadingState - Truck 4 finished LOADING
+2026-05-13 19:50:55.572 [INFO ] org.avaj.radyuk.state.CompletedState - Truck 4 completed & exiting the base
+2026-05-13 19:50:55.572 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 4 is leaving base. OccupiedSpots: 1/5
+2026-05-13 19:50:58.571 [INFO ] org.avaj.radyuk.state.UnloadingState - Truck 5 finished UNLOADING
+2026-05-13 19:50:58.571 [INFO ] org.avaj.radyuk.state.CompletedState - Truck 5 completed & exiting the base
+2026-05-13 19:50:58.572 [INFO ] org.avaj.radyuk.entity.LogisticBase - Truck 5 is leaving base. OccupiedSpots: 0/5
