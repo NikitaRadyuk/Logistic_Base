@@ -13,14 +13,12 @@ public class Truck implements Callable<TruckReport> {
     public static final Logger logger = LogManager.getLogger();
     private final Long truckId;
     private final boolean isPerishable;
-    private final LogisticBase base;
     private final TruckTypeOperation truckTypeOperation;
     private TruckState truckState;
 
-    public Truck(Long truckId, boolean isPerishable, LogisticBase base, TruckTypeOperation truckTypeOperation) {
+    public Truck(Long truckId, boolean isPerishable, TruckTypeOperation truckTypeOperation) {
         this.truckId = truckId;
         this.isPerishable = isPerishable;
-        this.base = base;
         this.truckTypeOperation = truckTypeOperation;
         this.truckState = new WaitingState(this);
     }
@@ -37,7 +35,6 @@ public class Truck implements Callable<TruckReport> {
 
     public Long getTruckId() {return truckId;}
     public boolean isPerishable() {return isPerishable;}
-    public LogisticBase getBase() {return base;}
     public TruckTypeOperation getTruckTypeOperation() {return truckTypeOperation;}
     public TruckState getTruckState() {return truckState;}
 

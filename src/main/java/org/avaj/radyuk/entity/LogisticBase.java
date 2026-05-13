@@ -23,7 +23,7 @@ public class LogisticBase {
     private final Queue<Truck> priorityQueue;
 
     private static class Holder  {
-        private static final LogisticBase INSTANCE = new LogisticBase(5, true);
+        private static final LogisticBase INSTANCE = new LogisticBase(3, true);
     }
 
     public static LogisticBase getInstance() {
@@ -91,33 +91,6 @@ public class LogisticBase {
     public Condition getPriorityCondition() {return priorityCondition;}
     public Queue<Truck> getRegularQueue() {return regularQueue;}
     public Queue<Truck> getPriorityQueue() {return priorityQueue;}
-
-    public int getWaitingRegularQueueSize() {
-        lock.lock();
-        try{
-            return regularQueue.size();
-        } finally {
-            lock.unlock();
-        }
-    }
-
-    public int getWaitingPriorityQueueSize() {
-        lock.lock();
-        try{
-            return priorityQueue.size();
-        } finally {
-            lock.unlock();
-        }
-    }
-
-    public int getTotalWaitingQueueSize() {
-        lock.lock();
-        try{
-            return regularQueue.size() + priorityQueue.size();
-        } finally {
-            lock.unlock();
-        }
-    }
 
     public String getStatistics() {
         lock.lock();

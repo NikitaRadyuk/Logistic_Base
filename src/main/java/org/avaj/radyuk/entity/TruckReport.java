@@ -16,7 +16,7 @@ public class TruckReport {
                 "=========================",
                 truck.getTruckId(),
                 truck.getTruckTypeOperation().getOperationTime(),
-                truck.isPerishable());
+                truck.isPerishable()?"Yes":"No");
         return stats;
     }
 
