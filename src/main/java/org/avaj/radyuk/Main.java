@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class Main {
     public static void main(String[] args) {
         LogisticBase base = LogisticBase.getInstance();
-        ExecutorService executor = Executors.newFixedThreadPool(3);
+        ExecutorService executor = Executors.newFixedThreadPool(5);
 
         System.out.println("=== ЛОГИСТИЧЕСКАЯ БАЗА ===\n");
 
